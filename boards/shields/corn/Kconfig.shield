@@ -1,0 +1,5 @@
+config SHIELD_CORN_LEFT
+    def_bool $(shields_list_contains,corn_left)
+
+config SHIELD_CORN_RIGHT
+    def_bool $(shields_list_contains,corn_right)
