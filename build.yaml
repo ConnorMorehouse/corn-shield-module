@@ -19,8 +19,8 @@
 #
 ---
 include:
-  - board: seeedunio_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: corn_left
-  - board: seeedunio_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: corn_right
   
