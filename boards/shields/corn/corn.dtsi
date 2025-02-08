@@ -1,36 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-//#include "corn-layouts.dtsi"
-
-//&physical_layout0 {
-//    //kscan = <&kscan0>;
-//    transform = <&default_transform>;
-//};
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout0;
-    };
-
-    physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical_layout";
-        display-name = "Default Layout";
-        transform = <&default_transform>;
-        kscan = <&kscan0>
-    };
-
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        wakeup-source;
-
-        diode-direction = "col2row";
-        row-gpios
-            = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            ;
+        zmk,matrix_transform = &default_transform;
     };
 
     default_transform: keymap_transform_0 {
