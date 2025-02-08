@@ -1,15 +1,9 @@
-/*
- * 
- * this has not yet been edits from the sofle default 
- * 
- */
-
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "corn-layouts.dtsi"
 
-&josefadamcik_sofle_layout {
-    transform = <&default_transform>;
-};
+//&josefadamcik_sofle_layout {
+//    transform = <&default_transform>;
+//};
 
 / {
     chosen {
