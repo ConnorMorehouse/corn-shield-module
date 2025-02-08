@@ -16,4 +16,3 @@
         , <&xiao_d 6 10 GPIO_ACTIVE_HIGH>
         ;
 };
-
