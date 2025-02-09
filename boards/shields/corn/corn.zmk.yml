@@ -1,8 +1,7 @@
 file_format: "1"
 id: corn
-name: Corn
+name: corn
 type: shield
-# url: https://github.com/foostan/crkbd/
 requires: [seeeduino_xiao_ble]
 features:
   - keys
