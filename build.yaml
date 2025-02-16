@@ -23,4 +23,5 @@ include:
     shield: corn_left
   - board: seeeduino_xiao_ble
     shield: corn_right
-  
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
