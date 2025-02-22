@@ -10,6 +10,12 @@
 #define MED 5
 #define TRAV 6
 
+&mt {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <125>;
+}
+
 / {
     keymap {
         compatible = "zmk,keymap";
