@@ -29,4 +29,7 @@ config ZMK_SLEEP
 config ZMK_BLE_EXPERIMENTAL_CONN
     default y
 
+config SYSTEM_WORKQUEUE_STACK_SIZE
+    default 2048
+
 endif
