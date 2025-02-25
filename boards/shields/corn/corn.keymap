@@ -48,12 +48,12 @@
         nav_layer {
             display-name = "nav";
             bindings = <
-// op    pink      ring      mid        ind         i ind           i ind    ind       mid        ring       pink       op
-&none    &none     &none     &none      &none       &none           &none    &none     &none      &none      &none      &none   //num
-&none    &none     &none     &none      &none       &none           &none    &none     &none      &none      &none      &none   //top
-&none    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none           &kp CAPS &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none   //mid
-&none    &kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V)   &kp LC(Y)       &none    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none   //bot
-                             &none      &none       &none           &kp DEL  &kp BSPC  &kp RET 
+// op    pink        ring          mid           ind         i ind           i ind    ind       mid        ring       pink       op
+&none    &none       &none         &none         &none       &none           &none    &none     &none      &none      &none      &none   //num
+&none    &kp C_NEXT  &kp C_VOL_UP  &kp C_VOL_DN  &kp C_PREV  &kp C_PP        &none    &none     &none      &none      &none      &none   //top
+&none    &kp LGUI    &kp LALT      &kp LCTRL     &kp LSHIFT  &none           &kp CAPS &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none   //mid
+&none    &kp LC(Z)   &kp LC(X)     &kp LC(C)     &kp LC(V)   &kp LC(Y)       &none    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none   //bot
+                                   &none         &none       &none           &kp DEL  &kp BSPC  &kp RET 
             >;
         };
 
