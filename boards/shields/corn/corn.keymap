@@ -49,7 +49,7 @@
             display-name = "nav";
             bindings = <
 // op       pink          ring          mid           ind           i ind                i ind    ind       mid        ring       pink       op
-&none       &none         &none         &none         &none         &none                &none    &none     &none      &none      &none      &none   //num
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &none    &none     &none      &none      &none      &none   //num
 &none       &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    &kp C_PP             &none    &none     &none      &none      &none      &none   //top
 &none       &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &none                &kp CAPS &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none   //mid
 &none       &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)            &none    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none   //bot
@@ -60,8 +60,8 @@
         fun_layer {
             display-name = "fun";
             bindings = <
-// op           pink          ring              mid           ind           i ind            i ind    ind        mid        ring      pink       op
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4          &none    &none      &none      &none     &none      &bootloader //num
+// op       pink            ring          mid           ind            i ind                 i ind    ind        mid        ring      pink       op
+&none       &none           &none         &none         &none          &none                 &none    &none      &none      &none     &none      &bootloader //num
 &none       &kp F12         &kp F7        &kp F8        &kp F9         &none                 &none    &none      &none      &none     &none      &none       //top
 &none       &kp F11         &kp F4        &kp F5        &kp F6         &none                 &none    &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI   &none       //mid
 &none       &kp F10         &kp F1        &kp F2        &kp F3         &none                 &none    &none      &none      &none     &none      &none       //bot
@@ -75,7 +75,7 @@
 // op    pink      ring      mid        ind         i ind           i ind    ind      mid      ring     pink     op
 &none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //num
 &none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //top
-&none    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none           &none    &none    &none    &none    &none    &none   //mid
+&none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //mid
 &none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //bot
                              &none      &none       &none           &none    &none    &none 
             >;
