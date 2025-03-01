@@ -85,10 +85,10 @@
             display-name = "gen_fps";
             bindings = <
 // op        pink         ring      mid        ind         i ind           i ind    ind         mid           ring          pink        op
-&none        &none        &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //num
-&none        &kp N1       &kp N2    &kp N3     &kp N4      &kp N5          &none    &none       &none         &none         &none       &none   //top
-&none        &kp LSHFT    &kp A     &kp W      &kp D       &kp G           &none    &none       &none         &none         &none       &none   //mid
-&none        &kp LCTRL    &kp Q     &kp S      &kp E       &none           &none    &none       &none         &none         &none       &none   //bot
+&none        &none        &none     &none      &none       &none           &none    &none       &none         &none         &none       &to DEFAULT  //num
+&none        &kp N1       &kp N2    &kp N3     &kp N4      &kp N5          &none    &none       &none         &none         &none       &none        //top
+&none        &kp LSHFT    &kp A     &kp W      &kp D       &kp G           &none    &none       &none         &none         &none       &none        //mid
+&none        &kp LCTRL    &kp Q     &kp S      &kp E       &none           &none    &none       &none         &none         &none       &none        //bot
                                     &kp TAB    &kp SPACE   &kp ESC         &none    &none       &kp RET 
             >;
         };
