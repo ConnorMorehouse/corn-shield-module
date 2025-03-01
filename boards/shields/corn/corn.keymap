@@ -6,9 +6,9 @@
 #define NUM 1 
 #define NAV 2
 #define FUN 3
-#define SYM 4
-#define MED 5
-#define TRAV 6
+#define TRAV 4 
+#define GEN_FPS 5
+#define DEEPROCK 6
 
 &mt {
     tapping-term-ms = <200>;
@@ -69,39 +69,27 @@
             >;
         };
 
-        sym_layer {
-            display-name = "sym";
-            bindings = <
-// op    pink      ring      mid        ind         i ind           i ind    ind      mid      ring     pink     op
-&none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //num
-&none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //top
-&none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //mid
-&none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //bot
-                             &none      &none       &none           &none    &none    &none 
-            >;
-        };
-
-        media_layer {
-            display-name = "media";
-            bindings = <
-// op    pink      ring      mid        ind         i ind           i ind    ind      mid      ring     pink     op
-&none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //num
-&none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //top
-&none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //mid
-&none    &none     &none     &none      &none       &none           &none    &none    &none    &none    &none    &none   //bot
-                             &none      &none       &none           &none    &none    &none 
-            >;
-        };
-
         travel_layer {
             display-name = "travel";
             bindings = <
-// op        pink      ring      mid        ind         i ind           i ind    ind         mid           ring          pink        op
-&bootloader  &none     &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //num
-&none        &none     &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //top
-&none        &none     &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //mid
-&none        &none     &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //bot
-                                 &none      &none       &none           &none    &none       &none 
+// op        pink         ring      mid        ind         i ind           i ind    ind         mid           ring          pink        op
+&none        &none        &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //num
+&none        &none        &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //top
+&none        &none        &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //mid
+&none        &to GEN_FPS  &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //bot
+                                    &none      &none       &none           &none    &none       &none 
+            >;
+        };
+
+        generic_fps_layer {
+            display-name = "gen_fps";
+            bindings = <
+// op        pink         ring      mid        ind         i ind           i ind    ind         mid           ring          pink        op
+&none        &none        &none     &none      &none       &none           &none    &none       &none         &none         &none       &none   //num
+&none        &kp N1       &kp N2    &kp N3     &kp N4      &kp N5          &none    &none       &none         &none         &none       &none   //top
+&none        &kp LSHFT    &kp A     &kp W      &kp D       &kp G           &none    &none       &none         &none         &none       &none   //mid
+&none        &kp LCTRL    &kp Q     &kp S      &kp E       &none           &none    &none       &none         &none         &none       &none   //bot
+                                    &kp TAB    &kp SPACE   &kp ESC         &none    &none       &kp RET 
             >;
         };
     };
