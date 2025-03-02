@@ -86,9 +86,9 @@
             bindings = <
 // op        pink         ring      mid        ind         i ind           i ind    ind         mid           ring          pink        op
 &kp ESC      &kp N1       &kp N2    &kp N3     &kp N4      &kp N5          &none    &none       &none         &none         &none       &to DEFAULT  //num
-&kp Y        &kp I        &kp Q     &kp W      &kp E       &kp T           &none    &none       &none         &none         &none       &none        //top
-&kp G        &kp LSHFT    &kp A     &kp S      &kp D       &kp F           &none    &none       &none         &none         &none       &none        //mid
-&kp LALT     &kp LCTRL    &kp Z     &kp X      &kp C       &kp B           &kp M    &none       &none         &none         &none       &none        //bot
+&kp Y        &kp I        &kp Q     &kp X      &kp E       &kp T           &none    &none       &none         &none         &none       &none        //top
+&kp G        &kp LSHFT    &kp A     &kp W      &kp D       &kp F           &none    &none       &none         &none         &none       &none        //mid
+&kp LALT     &kp LCTRL    &kp Z     &kp S       &kp C       &kp B           &kp M    &none       &none         &none         &none       &none        //bot
                                     &kp TAB    &kp SPACE   &kp R           &none    &kp BSPC    &kp RET 
             >;
         };
