@@ -75,9 +75,9 @@
 // op        pink         ring         mid        ind         i ind           i ind    ind         mid           ring          pink        op
 &none        &none        &none        &none      &none       &none           &none    &none       &none         &none         &none       &none   //num
 &none        &none        &none        &none      &none       &none           &none    &none       &none         &none         &none       &none   //top
-&none        &none        &none        none      &none       &none           &none    &none       &none         &none         &none       &none   //mid
+&none        &none        &none        &none       &none       &none           &none    &none       &none         &none         &none       &none   //mid
 &none        &none        &to GEN_FPS  &none      &none       &none           &none    &none       &none         &none         &none       &none   //bot
-                                    &none      &none       &none           &none    &none       &none 
+                                       &none      &none       &none           &none    &none       &none 
             >;
         };
 
