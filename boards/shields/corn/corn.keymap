@@ -7,7 +7,7 @@
 #define NAV 2
 #define FUN 3
 #define TRAV 4 
-#define GEN_FPS 5
+#define MC 5
 #define DEEPROCK 6
 
 &mt {
@@ -51,7 +51,7 @@
 // op              pink          ring          mid           ind           i ind                i ind    ind       mid        ring       pink       op
 &bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &none    &none     &none      &none      &none      &none   //num
 &kp LS(LC(LA(B)))  &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    &kp C_PP             &none    &none     &none      &none      &none      &none   //top
-&kp LS(LC(LA(S)))   &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &none               &kp CAPS &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none   //mid
+&kp LS(LC(LA(S)))  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &none                &kp CAPS &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none   //mid
 &none              &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)            &none    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none   //bot
                                                &none         &none         &none                &kp DEL  &kp BSPC  &kp RET 
             >;
@@ -75,21 +75,21 @@
 // op        pink         ring         mid        ind         i ind           i ind    ind         mid           ring          pink        op
 &none        &none        &none        &none      &none       &none           &none    &none       &none         &none         &none       &none   //num
 &none        &none        &none        &none      &none       &none           &none    &none       &none         &none         &none       &none   //top
-&none        &none        &none        &none       &none       &none           &none    &none       &none         &none         &none       &none   //mid
-&none        &none        &to GEN_FPS  &none      &none       &none           &none    &none       &none         &none         &none       &none   //bot
+&none        &none        &none        &none      &none       &none           &none    &none       &none         &none         &none       &none   //mid
+&none        &none        &to MC       &none      &none       &none           &none    &none       &none         &none         &none       &none   //bot
                                        &none      &none       &none           &none    &none       &none 
             >;
         };
 
-        generic_fps_layer {
-            display-name = "gen_fps";
+        minecraft_layer {
+            display-name = "mc";
             bindings = <
 // op        pink         ring      mid        ind         i ind           i ind    ind         mid           ring          pink        op
-&kp ESC      &kp N1       &kp N2    &kp N3     &kp N4      &kp N5          &none    &none       &none         &none         &none       &to DEFAULT  //num
-&kp Y        &kp I        &kp Q     &kp X      &kp E       &kp T           &none    &none       &none         &none         &none       &none        //top
-&kp G        &kp LSHFT    &kp A     &kp W      &kp D       &kp F           &none    &none       &none         &none         &none       &none        //mid
-&kp LALT     &kp LCTRL    &kp Z     &kp S       &kp C       &kp B           &kp M    &none       &none         &none         &none       &none        //bot
-                                    &kp TAB    &kp SPACE   &kp R           &none    &kp BSPC    &kp RET 
+&kp I        &kp R        &kp Q     &kp X      &kp F       &kp T           &none    &none       &none         &none         &none       &to DEFAULT  //num
+&kp N1       &kp N2       &kp N3    &kp N4     &kp N5      &kp N6          &none    &none       &none         &none         &none       &none        //top
+&kp LALT     &kp LSHFT    &kp A     &kp W      &kp D       &kp E           &none    &none       &none         &none         &none       &none        //mid
+&none        &kp LCTRL    &kp Z     &kp S      &kp V       &kp C           &kp M    &none       &none         &none         &none       &none        //bot
+                                    &kp B      &kp SPACE   &kp ESC         &kp TAB  &kp BSPC    &kp RET 
             >;
         };
     };
