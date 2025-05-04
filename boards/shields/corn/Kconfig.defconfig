@@ -9,6 +9,12 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_SLEEP
     default y 
 
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY 
+    default y 
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING 
+    default y 
+
 endif
 
 
@@ -36,11 +42,5 @@ config ZMK_BLE_EXPERIMENTAL_CONN
 
 config SYSTEM_WORKQUEUE_STACK_SIZE
     default 2048
-
-config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY 
-    default y 
-
-config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING 
-    default y 
 
 endif
