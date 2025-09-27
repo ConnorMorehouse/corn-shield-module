@@ -25,12 +25,12 @@
         default_layer {
             display-name = "default";
             bindings = <
-// op  pink        ring        mid           ind            i ind           i ind      ind           mid          ring        pink          op                      
-&none  &kp N1      &kp N2      &kp N3        &kp N4         &kp N5          &kp N6     &kp N7        &kp N8       &kp N9      &kp N0        &none       //num
-&none  &kp Q       &kp W       &kp E         &kp R          &kp T           &kp Y      &kp U         &kp I        &kp O       &kp P         &kp BSPC    //top
-&none  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LSHFT F    &kp G           &kp H      &mt RSHFT J   &mt RCTRL K  &mt RALT L  &mt LGUI SQT  &kp SEMI    //mid 
-&none  &kp Z       &kp X       &kp C         &kp V          &kp B           &kp N      &kp M         &kp COMMA    &kp DOT     &kp FSLH      &kp RSHFT   //bot 
-                               &lt TRAV TAB  &lt NAV SPACE  &kp ESC         &kp DEL    &lt NUM BSPC  &lt FUN ENTER 
+// op  pink        ring        mid           ind            i ind           i ind      ind           mid            ring        pink          op                      
+&none  &kp N1      &kp N2      &kp N3        &kp N4         &kp N5          &kp N6     &kp N7        &kp N8         &kp N9      &kp N0        &none       //num
+&none  &kp Q       &kp W       &kp E         &kp R          &kp T           &kp Y      &kp U         &kp I          &kp O       &kp P         &kp BSPC    //top
+&none  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LSHFT F    &kp G           &kp H      &mt RSHFT J   &mt RCTRL K    &mt RALT L  &mt LGUI SQT  &kp SEMI    //mid 
+&none  &kp Z       &kp X       &kp C         &kp V          &kp B           &kp N      &kp M         &kp COMMA      &kp DOT     &kp FSLH      &kp RSHFT   //bot 
+                   &none       &lt TRAV TAB  &lt NAV SPACE  &kp ESC         &kp DEL    &lt NUM BSPC  &lt FUN ENTER  &none
             >;
         };
 
@@ -42,7 +42,7 @@
 &none       &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &none    &none      &none      &none    &none    &none   //top
 &none       &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &none    &kp LSHIFT &kp LCTRL  &kp LALT &kp LGUI &none   //mid
 &none       &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &none    &none      &none      &none    &none    &none   //bot 
-                                        &kp DOT       &kp N0        &kp MINUS         &kp DEL  &kp BSPC   &kp RET 
+                          &none         &kp DOT       &kp N0        &kp MINUS         &kp DEL  &kp BSPC   &kp RET    &none
             >;
         };
 
@@ -54,7 +54,7 @@
 &kp LS(LC(LA(B)))  &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    &kp C_PP             &none    &none     &none      &none      &none      &none   //top
 &kp LS(LC(LA(S)))  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &none                &kp CAPS &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none   //mid
 &none              &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)            &none    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none   //bot
-                                               &none         &none         &none                &kp DEL  &kp BSPC  &kp RET 
+                                 &none         &none         &none         &none                &kp DEL  &kp BSPC  &kp RET    &none
             >;
         };
 
@@ -66,7 +66,7 @@
 &none       &kp F12         &kp F7        &kp F8        &kp F9         &none                 &none    &none      &none      &none     &none      &none       //top
 &none       &kp F11         &kp F4        &kp F5        &kp F6         &none                 &none    &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI   &none       //mid
 &none       &kp F10         &kp F1        &kp F2        &kp F3         &none                 &none    &none      &none      &none     &none      &none       //bot
-                                          &none         &none          &none                 &kp DEL  &kp BSPC   &none 
+                            &none         &none         &none          &none                 &kp DEL  &kp BSPC   &none      &none
             >;
         };
 
@@ -78,7 +78,7 @@
 &none        &none        &none        &none      &none       &none           &none    &none       &none         &none         &none       &none   //top
 &none        &none        &none        &none      &none       &none           &none    &none       &none         &none         &none       &none   //mid
 &none        &none        &to MC       &to AOE    &none       &none           &none    &none       &none         &none         &none       &none   //bot
-                                       &none      &none       &none           &none    &none       &none 
+                          &none        &none      &none       &none           &none    &none       &none         &none
             >;
         };
 
@@ -90,7 +90,7 @@
 &kp N1       &kp N2       &kp N3    &kp N4     &kp N5      &kp N6          &none    &none       &none         &none         &none       &none        //top
 &kp LALT     &kp LSHFT    &kp A     &kp W      &kp D       &kp E           &none    &none       &none         &none         &none       &none        //mid
 &none        &kp LCTRL    &kp Z     &kp S      &kp V       &kp C           &kp M    &none       &none         &none         &none       &none        //bot
-                                    &kp B      &kp SPACE   &kp ESC         &kp TAB  &kp BSPC    &kp RET 
+                          &none     &kp B      &kp SPACE   &kp ESC         &kp TAB  &kp BSPC    &kp RET       &none
             >;
         };
 
@@ -102,7 +102,7 @@
 &kp DOT      &kp Q        &kp W     &kp E      &kp R       &kp T           &kp Y     &kp U      &kp I       &kp O     &kp P      &kp BSPC    //top
 &kp COMMA    &kp A        &kp S     &kp D      &kp F       &kp G           &kp H     &kp J      &kp K       &kp L     &kp SQT    &kp SEMI    //mid 
 &kp SPACE    &kp Z        &kp X     &kp C      &kp V       &kp B           &kp N     &kp M      &kp COMMA   &kp DOT   &kp FSLH   &kp RSHFT   //bot 
-                                    &kp LALT   &kp LSHIFT  &kp LCTRL       &kp DEL   &kp BSPC   &kp RET 
+                          &none     &kp LALT   &kp LSHIFT  &kp LCTRL       &kp DEL   &kp BSPC   &kp RET     &none
             >;
         };
     };
