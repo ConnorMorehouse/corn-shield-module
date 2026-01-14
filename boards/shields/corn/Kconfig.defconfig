@@ -43,10 +43,4 @@ config ZMK_BLE_EXPERIMENTAL_CONN
 config SYSTEM_WORKQUEUE_STACK_SIZE
     default 2048
 
-config ZMK_KSCAN_DEBOUNCE_PRESS_MS
-    default 10
-
-config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
-    default 10
-
 endif
